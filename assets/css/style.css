@@ -407,7 +407,6 @@ header {
 /*--- Header Bottom section ---*/
 .header-bottom-area {
   background: #fff;
-  padding: 24px 0;
   box-shadow: var(--box-shadow);
 }
 
@@ -422,7 +421,7 @@ header {
 
 .main-menu ul li a {
   display: block;
-  padding: 14px 15px;
+  padding: 30px 15px;
   color: var(--secondary-color);
   font-weight: 700;
   font-size: 14px;
@@ -446,6 +445,7 @@ header {
   visibility: hidden;
   transition: all 0.15s ease-in-out;
   padding: 15px 0;
+  box-shadow: var(--box-shadow);
 }
 
 .main-menu ul li .submenu:after {
@@ -467,9 +467,8 @@ header {
 .main-menu ul li .submenu li {
   display: block;
 }
-
 .main-menu ul li .submenu li a {
-  padding: 7px 15px;
+  padding: 10px 26px;
   text-transform: capitalize;
 }
 
@@ -1888,6 +1887,12 @@ ul.recent-posts > li:last-child {
 }
 
 /* Contact form  */
+#map {
+  height: 100%;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 .contact-box {
   box-shadow: var(--box-shadow);
 }

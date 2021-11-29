@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- map integration -->
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
   </head>
   <body>
     <!-- Header start -->
@@ -144,7 +163,7 @@
               <div class="contact-box">
                 <div class="row gx-0">
                   <div class="col-xl-5">
-                    <div id="my-map" class="contact-map"></div>
+                    <div id="map"></div>
                   </div>
                   <div class="col-xl-7">
                     <div class="contact-page-form">
@@ -324,20 +343,9 @@
     <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <!-- Google map -->
-    <script>
-      function myMap() {
-        var mapProp = {
-          center: new google.maps.latLang(51.508742, -0.12085),
-          zoom: 5,
-        };
-        var map = new google.maps.Map(
-          document.getElementById("my-map"),
-          mapProp
-        );
-      }
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAZkmKS8b1BlBM7OIiLlJt7RdjFTzN46c&callback=myMap"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAZkmKS8b1BlBM7OIiLlJt7RdjFTzN46c&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>
