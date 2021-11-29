@@ -11,25 +11,6 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- map integration -->
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
   </head>
   <body>
     <!-- Header start -->
@@ -156,60 +137,102 @@
       </section>
       <!-- Page title end -->
 
-      <section class="single-post-section section-padding">
+      <section class="single-post-section section-padding gray-bg">
         <div class="container">
-          <div class="contact-form-area pt-100">
-            <div class="col-xl-12">
-              <div class="contact-box">
-                <div class="row gx-0">
-                  <div class="col-xl-5">
-                    <div id="map"></div>
+          <div class="row">
+            <div class="col-xl-4 mb-4">
+              <div
+                class="address d-flex align-items-center justify-content-center"
+              >
+                <div class="address-inner">
+                  <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
                   </div>
-                  <div class="col-xl-7">
-                    <div class="contact-page-form">
-                      <form>
-                        <div class="row">
-                          <div class="col mb-4">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Your Name"
-                              aria-label="Name"
-                            />
-                          </div>
-                          <div class="col mb-4">
-                            <input
-                              type="email"
-                              class="form-control"
-                              placeholder="Your Email"
-                              id="inputEmail4"
-                            />
-                          </div>
-                          <div class="col-12 mb-4">
-                            <input
-                              type="email"
-                              class="form-control"
-                              placeholder="Subject"
-                              id="inputEmail4"
-                            />
-                          </div>
-                          <div class="col-12 mb-4">
-                            <textarea
-                              class="form-control"
-                              name=""
-                              placeholder="Message"
-                              rows="5"
-                            ></textarea>
-                          </div>
-                          <div class="col-12">
-                            <button type="submit" class="theme-btn">
-                              Send
-                            </button>
-                          </div>
-                        </div>
-                      </form>
+                  <p>
+                    786/A Romada tower mall<br />
+                    Brooklyn, NYC
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 mb-4">
+              <div
+                class="address d-flex align-items-center justify-content-center"
+              >
+                <div class="address-inner">
+                  <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p>
+                    001+73643 355 265 <br />
+                    00 (34 569 543 87)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 mb-4">
+              <div
+                class="address d-flex align-items-center justify-content-center"
+              >
+                <div class="address-inner">
+                  <div class="icon-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p>
+                    <a href="mailto:info@yourmail.com">info@yourmail.com</a>
+                    <br />
+                    <a href="mailto:buildhub@gmail.com">buildhub@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-box mt-50">
+            <div class="row gx-0">
+              <div class="col-xl-5">
+                <div id="map"></div>
+              </div>
+              <div class="col-xl-7">
+                <div class="contact-page-form">
+                  <form>
+                    <div class="row">
+                      <div class="col mb-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your Name"
+                          aria-label="Name"
+                        />
+                      </div>
+                      <div class="col mb-4">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your Email"
+                          id="inputEmail4"
+                        />
+                      </div>
+                      <div class="col-12 mb-4">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Subject"
+                          id="inputEmail4"
+                        />
+                      </div>
+                      <div class="col-12 mb-4">
+                        <textarea
+                          class="form-control"
+                          name=""
+                          placeholder="Message"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="theme-btn">Send</button>
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -342,6 +365,21 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- map integration -->
+    <script>
+      function initMap() {
+        const uluru = { lat: -25.344, lng: 131.036 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
 
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAZkmKS8b1BlBM7OIiLlJt7RdjFTzN46c&callback=initMap&libraries=&v=weekly"

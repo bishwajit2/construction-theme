@@ -1887,13 +1887,34 @@ ul.recent-posts > li:last-child {
 }
 
 /* Contact form  */
+.address {
+  text-align: center;
+  background: #fff;
+  height: 200px;
+  box-shadow: var(--box-shadow);
+}
+
+.address-inner .icon-box i {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
+.address-inner .icon-box {
+  margin-bottom: 15px;
+}
+
+.address-inner p {
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
 #map {
   height: 100%;
-  /* The height is 400 pixels */
   width: 100%;
-  /* The width is the width of the web page */
 }
 .contact-box {
+  background-color: #fff;
   box-shadow: var(--box-shadow);
 }
 
@@ -1907,5 +1928,9 @@ ul.recent-posts > li:last-child {
   height: 100%;
 }
 .contact-page-form {
-  padding: 50px 30px;
+  padding: 50px 30px 50px 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
 }
