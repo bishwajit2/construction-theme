@@ -161,7 +161,7 @@
               >
                 <div class="address-inner">
                   <div class="icon-box">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-phone-alt"></i>
                   </div>
                   <p>
                     001+73643 355 265 <br />
@@ -176,7 +176,7 @@
               >
                 <div class="address-inner">
                   <div class="icon-box">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-envelope-open"></i>
                   </div>
                   <p>
                     <a href="mailto:info@yourmail.com">info@yourmail.com</a>
@@ -191,6 +191,23 @@
             <div class="row gx-0">
               <div class="col-xl-5">
                 <div id="map"></div>
+
+                <!-- map integration javascript -->
+                <script>
+                  function initMap() {
+                    new google.maps.Map(document.getElementById("map"), {
+                      mapId: "ce36b758773680eb",
+                      center: { lat: 48.85, lng: 2.35 },
+                      zoom: 12,
+                    });
+                  }
+                </script>
+
+                <script
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+                  async
+                ></script>
+                <!-- map integration javascript end -->
               </div>
               <div class="col-xl-7">
                 <div class="contact-page-form">
@@ -365,25 +382,5 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <!-- map integration -->
-    <script>
-      function initMap() {
-        const uluru = { lat: -25.344, lng: 131.036 };
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-        });
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
-
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAZkmKS8b1BlBM7OIiLlJt7RdjFTzN46c&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
   </body>
 </html>

@@ -1918,7 +1918,8 @@ ul.recent-posts > li:last-child {
   box-shadow: var(--box-shadow);
 }
 
-.contact-map {
+#map,
+#map iframe {
   width: 100%;
   height: 100%;
 }
