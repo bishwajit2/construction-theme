@@ -260,17 +260,28 @@
 
                 <!-- map integration javascript -->
                 <script>
+                  // Initialize and add the map
                   function initMap() {
-                    new google.maps.Map(document.getElementById("map"), {
-                      mapId: "ce36b758773680eb",
-                      center: { lat: 48.85, lng: 2.35 },
-                      zoom: 12,
+                    // The location of Uluru
+                    const uluru = { lat: -25.344, lng: 131.036 };
+                    // The map, centered at Uluru
+                    const map = new google.maps.Map(
+                      document.getElementById("map"),
+                      {
+                        zoom: 4,
+                        center: uluru,
+                      }
+                    );
+                    // The marker, positioned at Uluru
+                    const marker = new google.maps.Marker({
+                      position: uluru,
+                      map: map,
                     });
                   }
                 </script>
 
                 <script
-                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABPI88ilz3Zr-e0lmRDTcgbEi1z-2waUE&callback=initMap&v=weekly&channel=2"
                   async
                 ></script>
                 <!-- map integration javascript end -->
