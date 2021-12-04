@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Construction</title>
+    <title>About Us</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
@@ -87,9 +87,75 @@
                   <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Service</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li>
+                      <a href="project.html">Work</a>
+                      <ul class="submenu">
+                        <li><a href="project.html">Work</a></li>
+                        <li>
+                          <a href="project_details.html">Project Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="services.html">Service</a>
+                      <ul class="submenu">
+                        <li><a href="services.html">Services</a></li>
+                        <li>
+                          <a href="service_details.html">Service Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Pages</a>
+                      <ul class="submenu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">blog Page</a></li>
+                        <li>
+                          <a href="blog_with_right_sidebar.html"
+                            >Right Sidebar Blog</a
+                          >
+                        </li>
+                        <li><a href="blog_details.html">blog Details</a></li>
+                        <li>
+                          <a href="blog_details_left_sidebar.html"
+                            >blog Details left sidebar</a
+                          >
+                        </li>
+                        <li>
+                          <a href="blog_details_right_sidebar.html"
+                            >Blog Details right sidebar</a
+                          >
+                        </li>
+                        <li><a href="project.html">Work</a></li>
+                        <li><a href="project_details.html">Work Details</a></li>
+                        <li><a href="faq.html">FAQ page</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li>
+                          <a href="project_details.html">Project Details</a>
+                        </li>
+                        <li><a href="services.html">Services</a></li>
+                        <li>
+                          <a href="service_details.html">Service Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="blog.html">Blog</a>
+                      <ul class="submenu">
+                        <li><a href="blog.html">blog</a></li>
+                        <li>
+                          <a href="blog_with_right_sidebar.html"
+                            >Blog right sidebar</a
+                          >
+                        </li>
+                        <li><a href="blog_details.html">Blog Details</a></li>
+                        <li>
+                          <a href="blog_details_right_sidebar.html"
+                            >Blog Details right sidebar</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </nav>
@@ -140,12 +206,12 @@
       <!-- About section start -->
       <section class="about-section section-padding">
         <div class="container">
-          <div class="row d-flex align-items-center">
+          <div class="row d-flex align-items-center g-5">
             <div class="col-xl-6">
               <div class="about-img">
                 <img
                   class="img-fluid"
-                  src="assets/images/management-1.jpg"
+                  src="assets/images/about/about-img.jpg"
                   alt=""
                 />
               </div>
@@ -197,6 +263,11 @@
                   class="bordered-title wow slideInLeft"
                   data-wow-offset="300"
                   data-wow-duration="2s"
+                  style="
+                    visibility: visible;
+                    animation-duration: 2s;
+                    animation-name: slideInLeft;
+                  "
                 >
                   Services
                 </h1>
@@ -206,64 +277,81 @@
             <!-- Section title End -->
           </div>
 
-          <div class="row d-flex align-items-center">
-            <div class="col-xl-4">
+          <div class="row d-flex align-items-center gy-4">
+            <div class="col-xl-3">
               <div class="single-service card">
-                <div class="service-image">
+                <div class="service-icon">
                   <img
                     class="img-fluid"
-                    src="assets/images/service-image/service-1.jpg"
-                    alt="build a building"
+                    src="assets/images/icon/service-icon-1.png"
+                    alt=""
                   />
-                  <a class="img-hover" href="#"><i class="fas fa-plus"></i></a>
                 </div>
-                <div class="card-body">
-                  <h4><a href="#">Architecture</a></h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nulla autem tempora eaque quisquam aspernatur eos.
-                  </p>
-                </div>
+                <h4 class="card-title">Architecture</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Illum, iste?
+                </p>
+                <a href="service_details.html" class="btn read-more-btn"
+                  >Read More<i class="fas fa-chevron-right"></i
+                ></a>
               </div>
             </div>
-
-            <div class="col-xl-4">
+            <div class="col-xl-3">
               <div class="single-service card">
-                <div class="service-image">
+                <div class="service-icon">
                   <img
                     class="img-fluid"
-                    src="assets/images/service-image/service-1.jpg"
-                    alt="build a building"
+                    src="assets/images/icon/service-icon-2.png"
+                    alt=""
                   />
-                  <a class="img-hover" href="#"><i class="fas fa-plus"></i></a>
                 </div>
-                <div class="card-body">
-                  <h4><a href="#">Architecture</a></h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nulla autem tempora eaque quisquam aspernatur eos.
-                  </p>
-                </div>
+                <h4 class="card-title">Construction</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Illum, iste?
+                </p>
+                <a href="service_details.html" class="btn read-more-btn"
+                  >Read More<i class="fas fa-chevron-right"></i
+                ></a>
               </div>
             </div>
-
-            <div class="col-xl-4">
+            <div class="col-xl-3">
               <div class="single-service card">
-                <div class="service-image">
+                <div class="service-icon">
                   <img
                     class="img-fluid"
-                    src="assets/images/service-image/service-1.jpg"
-                    alt="build a building"
+                    src="assets/images/icon/service-icon-3.png"
+                    alt=""
                   />
-                  <a class="img-hover" href="#"><i class="fas fa-plus"></i></a>
                 </div>
-                <div class="card-body">
-                  <h4><a href="#">Architecture</a></h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nulla autem tempora eaque quisquam aspernatur eos.
-                  </p>
+                <h4 class="card-title">Exterior Design</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Illum, iste?
+                </p>
+                <a href="service_details.html" class="btn read-more-btn"
+                  >Read More<i class="fas fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-xl-3">
+              <div class="single-service card">
+                <div class="service-icon">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/icon/service-icon-4.png"
+                    alt=""
+                  />
                 </div>
+                <h4 class="card-title">Interior Design</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Illum, iste?
+                </p>
+                <a href="service_details.html" class="btn read-more-btn"
+                  >Read More<i class="fas fa-chevron-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -290,9 +378,47 @@
             </div>
             <!-- Section title End -->
           </div>
-          <div class="row gx-5">
+          <div class="row g-5">
             <!-- Single team end-->
-            <div class="col-xl-6 mb-5">
+            <div class="col-xl-6">
+              <div class="single-team card">
+                <div class="row g-0 align-items-center">
+                  <div class="col-xl-5">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/team/team-5.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-xl-7">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        James Williams <span>CEO & Founder</span>
+                      </h4>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore obcaecati voluptatum voluptas?
+                      </p>
+                      <ul class="team-social-links">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Single team end-->
+
+            <!-- Single team end-->
+            <div class="col-xl-6">
               <div class="single-team card">
                 <div class="row g-0 align-items-center">
                   <div class="col-xl-5">
@@ -305,45 +431,7 @@
                   <div class="col-xl-7">
                     <div class="card-body">
                       <h4 class="card-title">
-                        John Doe <span>CEO & Founder</span>
-                      </h4>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore obcaecati voluptatum voluptas?
-                      </p>
-                      <ul class="team-social-links">
-                        <li>
-                          <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Single team end-->
-
-            <!-- Single team end-->
-            <div class="col-xl-6 mb-5">
-              <div class="single-team card">
-                <div class="row g-0 align-items-center">
-                  <div class="col-xl-5">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/team/team-4.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-xl-7">
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        John Doe <span>CEO & Founder</span>
+                        Sofia Vergara <span>CEO & Founder</span>
                       </h4>
                       <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -368,20 +456,20 @@
             <!-- Single team end-->
 
             <!-- Single team start-->
-            <div class="col-xl-6 mb-5">
+            <div class="col-xl-6">
               <div class="single-team card">
                 <div class="row g-0 align-items-center">
                   <div class="col-xl-5">
                     <img
                       class="img-fluid"
-                      src="assets/images/team/team-4.jpg"
+                      src="assets/images/team/team-3.jpg"
                       alt=""
                     />
                   </div>
                   <div class="col-xl-7">
                     <div class="card-body">
                       <h4 class="card-title">
-                        John Doe <span>CEO & Founder</span>
+                        Jack Davies <span>CEO & Founder</span>
                       </h4>
                       <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -406,7 +494,7 @@
             <!-- Single team end-->
 
             <!-- Single team start-->
-            <div class="col-xl-6 mb-5">
+            <div class="col-xl-6">
               <div class="single-team card">
                 <div class="row g-0 align-items-center">
                   <div class="col-xl-5">
@@ -445,7 +533,7 @@
           </div>
 
           <!-- circle-progress start -->
-          <div class="circle-progress-section pt-70">
+          <div class="circle-progress-section pt-100">
             <div class="row">
               <div class="col-xl-3 mb-4">
                 <div class="progress-box">
@@ -546,7 +634,11 @@
                     </div>
                     <div class="testimonial-author-content">
                       <div class="quote">
-                        <i class="fas fa-quote-right"></i>
+                        <img
+                          class="img-fluid"
+                          src="assets/images/icon/testimonial-icon.png"
+                          alt=""
+                        />
                       </div>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -567,13 +659,17 @@
                     <div class="author-img">
                       <img
                         class="img-fluid"
-                        src="assets/images/testimonial/testimonial-1.jpg"
+                        src="assets/images/testimonial/testimonial-2.jpg"
                         alt=""
                       />
                     </div>
                     <div class="testimonial-author-content">
                       <div class="quote">
-                        <i class="fas fa-quote-right"></i>
+                        <img
+                          class="img-fluid"
+                          src="assets/images/icon/testimonial-icon.png"
+                          alt=""
+                        />
                       </div>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -582,7 +678,7 @@
                         voluptates expedita nesciunt.
                       </p>
                       <h4 class="testimonial-author-name">
-                        Simon Duo
+                        David Albert
                         <span>Partner Brevin</span>
                       </h4>
                     </div>
