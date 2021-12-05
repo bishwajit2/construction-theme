@@ -256,23 +256,20 @@
           <div class="contact-box mt-50">
             <div class="row gx-0">
               <div class="col-xl-5">
+                <!-- Google Map -->
                 <div id="map"></div>
 
-                <!-- map integration javascript -->
+                <!-- Map script -->
                 <script>
-                  // Initialize and add the map
                   function initMap() {
-                    // The location of Uluru
                     const uluru = { lat: -25.344, lng: 131.036 };
-                    // The map, centered at Uluru
                     const map = new google.maps.Map(
                       document.getElementById("map"),
                       {
-                        zoom: 4,
+                        zoom: 10,
                         center: uluru,
                       }
                     );
-                    // The marker, positioned at Uluru
                     const marker = new google.maps.Marker({
                       position: uluru,
                       map: map,
@@ -456,7 +453,7 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/jquery.scrollUp.min.js"></script>
     <script src="assets/js/waypoints.js"></script>
-    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/circle-progress-min.js"></script>
     <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

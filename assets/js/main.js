@@ -166,22 +166,88 @@
     activeOverlay: true, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
   });
 
-  // Circle progress bar
-  $(function () {
-    $(".const-circle").easyPieChart({
-      barColor: "#FF5E15",
-      scaleLength: 0,
-      size: 175,
-      onStep: function (from, to, percent) {
-        $(this.el).find(".percent").text(Math.round(percent));
-      },
-    });
-  });
-
   // counter section activation
   $(".single-counter .counter").counterUp({
     delay: 10,
     time: 2000,
     offset: 95,
+  });
+
+  // 2nd Circle progress bar
+  function animateElements() {
+    $(".progressbar").each(function () {
+      let elementPos = $(this).offset().top;
+      let topOfWindow = $(window).scrollTop();
+      let percent = $(this).find(".circle").attr("data-percent");
+      let percentage = parseInt(percent, 10) / parseInt(100, 10);
+      let animate = $(this).data("animate");
+      if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+        $(this).data("animate", true);
+        $(this)
+          .find(".circle")
+          .circleProgress({
+            startAngle: -Math.PI / 2,
+            value: percent / 100,
+            size: 175,
+            thickness: 3,
+            emptyFill: "rgba(0, 0, 0, 0.02)",
+            fill: {
+              color: "rgb(255, 94, 21)",
+            },
+            animation: {
+              duration: 2000,
+              easing: "circleProgressEasing",
+            },
+          })
+          .on(
+            "circle-animation-progress",
+            function (event, progress, stepValue) {
+              $(this)
+                .find("div")
+                .html((stepValue * 100).toFixed(0) + "<span>%</span>");
+            }
+          )
+          .stop();
+      }
+    });
+  }
+  // Show animated elements
+  animateElements();
+  $(window).scroll(animateElements);
+
+  // Magnific popup youtube video
+  $(
+    ".about-link .video-play-btn, .video-section .video-play-btn"
+  ).magnificPopup({
+    type: "iframe",
+    iframe: {
+      markup:
+        '<div class="mfp-iframe-scaler">' +
+        '<div class="mfp-close"></div>' +
+        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+        "</div>",
+
+      patterns: {
+        youtube: {
+          index: "youtube.com/",
+
+          id: "v=",
+
+          src: "https://www.youtube.com/embed/%id%?autoplay=1",
+        },
+        vimeo: {
+          index: "vimeo.com/",
+          id: "/",
+          src: "https://player.vimeo.com/video/%id%?autoplay=1",
+        },
+
+        gmaps: {
+          index: "//maps.google.",
+          src: "%id%&output=embed",
+        },
+      },
+
+      srcAction: "iframe_src",
+    },
   });
 })(jQuery);
