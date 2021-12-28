@@ -1,19 +1,109 @@
-/* XL Device :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
+/* Mobile layout: 320px */
+@media only screen and (max-width: 767px) {
+  /* Theme Default CSS */
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  h2 {
+    font-size: 2.125rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  /* Slider Area CSS */
+  .slider-section {
+    height: 600px;
+  }
+
+  .single-slider-inner {
+    margin-top: 0;
+  }
+
+  .slider-content h2 {
+    font-size: 2.75rem;
+  }
+
+  .section-title .bordered-title {
+    display: none;
+  }
+
+  .hero-btn .theme-btn {
+    width: 180px;
+    text-align: center;
+  }
+
+  .hero-btn .theme-btn:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  /* Section Title CSS */
+  .section-title .section-heading {
+    padding-top: 0;
+  }
+
+  /* Blog section */
+  .blog-page-link {
+    margin-bottom: 40px;
+  }
+
+  /* FAQ section CSS */
+  .theme-faq .accordion-button {
+    font-size: 1.125rem;
+  }
+
+  /* copyright Section CSS */
+  .copyright-section p,
+  .copyright-section a {
+    text-align: center;
+  }
+  .copyright-menu ul {
+    text-align: center;
+  }
 }
 
-/* LG Device :992px. */
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-
-/* MD Device :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
-}
-
-/* SM Device :320px. */
-@media (max-width: 767px) {
-}
-
-/* Large Mobile :480px. */
+/* Wide mobile layout: 1320 */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .slider-content h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Tablet & Mobile: 1320 */
+@media only screen and (max-width: 991px) {
+  header {
+    display: none;
+  }
+}
+
+/* Tablet layout: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-section {
+    height: 600px;
+  }
+
+  .slider-content h2 {
+    font-size: 4rem;
+  }
+
+  .single-slider-inner {
+    margin-top: 0;
+  }
+
+  .about-img .img-fluid {
+    width: 100%;
+  }
+}
+
+/* Medium layout: 1320 */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-counter .bordered-counter {
+    font-size: 90px;
+  }
+}
+
+/* Large layout: 1320 */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
 }

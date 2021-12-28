@@ -1,9 +1,6 @@
 (function ($) {
   "use strict";
 
-  // Activation wow.js
-  new WOW().init();
-
   // Hero slider activation
   function heroSlider() {
     var BasicSlider = $(".slider-active");
@@ -59,7 +56,7 @@
 
   // Project sliding activation
   $(".project-slides").slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: true,
     draggable: true,
@@ -67,7 +64,7 @@
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           infinite: false,
@@ -79,11 +76,11 @@
         settings: {
           slidesToShow: 2,
           infinite: true,
-          arrows: true,
+          arrows: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           arrows: false,
@@ -91,7 +88,7 @@
         },
       },
       {
-        breakpoint: 300,
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           dots: false,
@@ -130,9 +127,9 @@
     slidesToShow: 5,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           infinite: false,
         },
       },
@@ -140,11 +137,25 @@
         breakpoint: 992,
         settings: {
           slidesToShow: 3,
-          infinite: true,
+          infinite: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          infinite: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          infinite: false,
+        },
+      },
+      {
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           arrows: false,
@@ -249,5 +260,11 @@
 
       srcAction: "iframe_src",
     },
+  });
+
+  // AOS init
+  AOS.init({
+    once: true,
+    animatedClassName: "animated",
   });
 })(jQuery);
