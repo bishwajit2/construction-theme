@@ -31,7 +31,7 @@
       nextArrow:
         '<button type="button" class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></button>',
       responsive: [
-        { breakpoint: 767, settings: { dots: false, arrows: false } },
+        { breakpoint: 768, settings: { dots: false, arrows: false } },
       ],
     });
 
@@ -106,15 +106,20 @@
   $(".testimonial-slider").slick({
     autoplay: false,
     autoplaySpeed: 3000,
-    arrows: true,
+    arrows: false,
     draggable: true,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    prevArrow:
-      '<button type="button" class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow:
-      '<button type="button" class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></button>',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   // Logo sliding activation

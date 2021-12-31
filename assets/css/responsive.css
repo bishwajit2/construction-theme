@@ -99,8 +99,28 @@
 
 /* Medium layout: 1320 */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .tag-list a {
+    padding: 6px 8px;
+  }
+
   .single-counter .bordered-counter {
     font-size: 90px;
+  }
+
+  .header-top-info ul li {
+    font-size: 0.9rem;
+  }
+
+  .main-menu ul li a {
+    font-size: 0.9rem;
+  }
+
+  .theme-faq .accordion-button {
+    font-size: 1.125rem;
   }
 }
 
