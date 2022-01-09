@@ -1,12 +1,82 @@
+/* Large layout: 1320 */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+}
+
+/* Medium layout: 1320 */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .tag-list a {
+    padding: 6px 8px;
+  }
+
+  .single-counter .bordered-counter {
+    font-size: 90px;
+  }
+
+  .header-top-info ul li {
+    font-size: 0.9rem;
+  }
+
+  .main-menu ul li a {
+    font-size: 0.9rem;
+  }
+
+  .theme-faq .accordion-button {
+    font-size: 1.125rem;
+  }
+}
+
+/* Tablet layout: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-section {
+    height: 600px;
+  }
+
+  .slider-content h2 {
+    font-size: 4rem;
+  }
+
+  .single-slider-inner {
+    margin-top: 0;
+  }
+
+  .about-img .img-fluid {
+    width: 100%;
+  }
+
+  /* --------------------------------
+  About page CSS 
+  ===================================*/
+  .page-title-area {
+    padding: 150px 0 80px 0;
+  }
+}
+
+/* Tablet & Mobile: 1320 */
+@media only screen and (max-width: 991px) {
+  header {
+    display: none;
+  }
+}
+
 /* Mobile layout: 320px */
 @media only screen and (max-width: 767px) {
-  /* Theme Default CSS */
+  /* --------------------------------
+  Theme Default CSS 
+  ===================================*/
   .section-padding {
     padding: 70px 0;
   }
 
   h2 {
     font-size: 2.125rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   h4 {
@@ -49,9 +119,29 @@
     margin-bottom: 40px;
   }
 
+  .theme-pagination .page-link {
+    margin: 0px 6px;
+    font-size: 0.75rem;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+
   /* FAQ section CSS */
+  .faq-left {
+    padding: 30px;
+  }
+
+  .faq-left h2 {
+    font-size: 2rem;
+  }
+
   .theme-faq .accordion-button {
     font-size: 1.125rem;
+  }
+
+  .subscribe-section .subsribe-box .form-control {
+    width: 90%;
   }
 
   /* copyright Section CSS */
@@ -62,68 +152,79 @@
   .copyright-menu ul {
     text-align: center;
   }
+
+  /* --------------------------------
+  About page CSS 
+  ===================================*/
+  .page-title-area {
+    padding: 150px 0 80px 0;
+  }
+
+  .bordered-title {
+    font-size: 5rem;
+  }
+  .page-title-inner .text-title {
+    font-size: 2.25rem;
+    padding-top: 60px;
+  }
+
+  /* --------------------------------
+  Blog details CSS 
+  ===================================*/
+
+  .post-wrapper {
+    padding: 30px 15px 50px 15px;
+  }
+
+  .comment-avatar {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .comment-reply {
+    padding-left: 30px;
+  }
+
+  .blog-post-tag {
+    text-align: center;
+  }
+
+  .post-tag-wrapper .blog-share-media-icon {
+    text-align: center !important;
+    margin-top: 15px;
+  }
+
+  /* Contact page */
+  .contact-page-form {
+    padding: 30px;
+  }
 }
 
 /* Wide mobile layout: 1320 */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
   .slider-content h2 {
     font-size: 3.5rem;
   }
-}
 
-/* Tablet & Mobile: 1320 */
-@media only screen and (max-width: 991px) {
-  header {
-    display: none;
-  }
-}
-
-/* Tablet layout: 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-section {
-    height: 600px;
+  .theme-pagination .page-link {
+    margin: 0px 10px;
+    font-size: 0.875rem;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
   }
 
-  .slider-content h2 {
-    font-size: 4rem;
+  .bordered-title {
+    font-size: 5.5rem;
   }
-
-  .single-slider-inner {
-    margin-top: 0;
-  }
-
-  .about-img .img-fluid {
-    width: 100%;
-  }
-}
-
-/* Medium layout: 1320 */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  h4 {
-    font-size: 1.25rem;
-  }
-
-  .tag-list a {
-    padding: 6px 8px;
-  }
-
-  .single-counter .bordered-counter {
-    font-size: 90px;
-  }
-
-  .header-top-info ul li {
-    font-size: 0.9rem;
-  }
-
-  .main-menu ul li a {
-    font-size: 0.9rem;
-  }
-
-  .theme-faq .accordion-button {
-    font-size: 1.125rem;
-  }
-}
-
-/* Large layout: 1320 */
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
 }
