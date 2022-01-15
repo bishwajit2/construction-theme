@@ -2,12 +2,19 @@
   "use strict";
   $(document).ready(function () {
     // Sticky menu
-    function sticky_menu() {
+    function sticky() {
+      let headerTop = $(".header-top");
       let headerBottom = $(".header-bottom-area");
-      let navOffset = headerBottom.offset().top;
-      console.log(navOffset);
+      let sticky = headerTop.height();
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() >= sticky) {
+          headerBottom.addClass("sticky");
+        } else {
+          headerBottom.removeClass("sticky");
+        }
+      });
     }
-    sticky_menu();
+    sticky();
 
     // Hero slider activation
     function heroSlider() {

@@ -981,6 +981,13 @@ header {
   box-shadow: var(--box-shadow);
 }
 
+.header-bottom-area.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 /* Main menu */
 .main-menu {
   margin-right: 20px;

@@ -114,9 +114,17 @@
     padding-top: 0;
   }
 
+  .testimonial-content {
+    padding: 20px;
+  }
+
   /* Blog section */
   .blog-page-link {
     margin-bottom: 40px;
+  }
+
+  .single-blog .blog-content {
+    padding: 20px;
   }
 
   .theme-pagination .page-link {
@@ -173,7 +181,7 @@
   ===================================*/
 
   .post-wrapper {
-    padding: 30px 15px 50px 15px;
+    padding: 20px;
   }
 
   .comment-avatar {
@@ -199,6 +207,11 @@
   /* Contact page */
   .contact-page-form {
     padding: 30px;
+  }
+
+  /* Sidebar */
+  .widget {
+    padding: 20px;
   }
 }
 
