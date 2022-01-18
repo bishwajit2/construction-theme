@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <!-- ========== All CSS Here end ========== -->
@@ -21,12 +22,14 @@
 
   <body>
     <!-- ========== Header area start ========== -->
+
+    <div class="slick-nav-menu"></div>
     <header>
       <!-- header top -->
       <div class="header-top">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <!-- Header social Link -->
               <div class="social-icon">
                 <nav>
@@ -55,7 +58,7 @@
               <!-- Header social link -->
             </div>
 
-            <div class="col-xl-8">
+            <div class="col-xl-8 col-lg-8">
               <!-- header contact info -->
               <div class="header-top-info text-right">
                 <nav>
@@ -87,7 +90,7 @@
       <!-- Header bottom start -->
       <div class="header-bottom-area">
         <div class="container">
-          <div class="row d-flex align-items-center">
+          <div class="row d-flex align-items-center justify-content-between">
             <div class="col-xl-2 col-lg-2">
               <!-- Logo -->
               <div class="nav-brand">
@@ -98,12 +101,10 @@
               <!-- Logo -->
             </div>
             <!-- Navigation menu -->
-            <div
-              class="col-xl-10 col-lg-10 d-flex align-items-center justify-content-end"
-            >
+            <div class="col-xl-10 col-lg-10 text-end">
               <!-- Main menu end -->
               <div class="main-menu">
-                <nav>
+                <nav id="navMenu">
                   <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -159,14 +160,11 @@
                       </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
+                    <a href="contact.html" class="theme-btn">Get a quote</a>
                   </ul>
                 </nav>
               </div>
               <!-- Main menu end -->
-
-              <div class="header-button">
-                <a href="contact.html" class="theme-btn">Get a quote</a>
-              </div>
             </div>
             <!-- Navigation menu -->
           </div>
@@ -544,6 +542,7 @@
     <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

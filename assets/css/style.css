@@ -988,11 +988,12 @@ header {
   top: 0;
 }
 
-/* Main menu */
-.main-menu {
-  margin-right: 20px;
+.nav-brand a {
+  display: block;
+  padding: 22px 0;
 }
 
+/* Main menu */
 .main-menu ul li {
   display: inline-block;
   position: relative;
@@ -1029,6 +1030,7 @@ header {
   padding: 15px 0;
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
+  text-align: left;
 }
 
 .main-menu ul li .submenu:after {
@@ -1054,6 +1056,51 @@ header {
 .main-menu ul li .submenu li a {
   padding: 10px 26px;
   text-transform: capitalize;
+}
+
+/* Mobile Menu */
+.slick-nav-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slick-nav-menu .slicknav_menu {
+  background: var(--secondary-color);
+}
+
+.slick-nav-menu .slicknav_brand {
+  height: auto;
+  width: 140px;
+  padding: 2px;
+}
+
+.slick-nav-menu .slicknav_brand img {
+  width: 100%;
+}
+
+.slick-nav-menu .slicknav_btn {
+  background: none;
+}
+
+.slick-nav-menu .slicknav_menu .slicknav_menutxt {
+  box-shadow: none;
+}
+
+.slicknav_nav a {
+  background: #ffffff11;
+  text-align: center;
+}
+
+.slick-nav-menu .slicknav_nav a:hover,
+.slick-nav-menu .slicknav_nav .slicknav_row:hover {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #ffffff22;
+  color: #fff;
 }
 
 /* ----------------------------------------------- 
@@ -1112,7 +1159,7 @@ header {
   width: 70px;
   right: 0;
   bottom: 0;
-  z-index: 111111112;
+  z-index: 998;
   height: 70px;
   border: none;
   background: #fff;

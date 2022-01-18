@@ -60,6 +60,11 @@
   header {
     display: none;
   }
+
+  .slick-nav-menu {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 /* Mobile layout: 320px */
