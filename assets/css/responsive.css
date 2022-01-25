@@ -57,13 +57,22 @@
 
 /* Tablet & Mobile: 1320 */
 @media only screen and (max-width: 991px) {
-  header {
+  .header-top {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .main-menu nav {
     display: none;
   }
 
   .slick-nav-menu {
     opacity: 1;
     visibility: visible;
+  }
+
+  .open-nav-menu {
+    display: block;
   }
 }
 

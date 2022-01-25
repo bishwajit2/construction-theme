@@ -19,9 +19,11 @@
     // Slicknav Activation
     $(function () {
       $("#navMenu").slicknav({
-        prependTo: ".slick-nav-menu",
         label: "",
-        brand: '<img src="assets/images/logo-02.png" alt="" />',
+        closedSymbol: "<span>+</span>",
+        openedSymbol: "<span>-</span>",
+        prependTo: ".open-nav-menu",
+        closeOnClick: true,
       });
     });
 

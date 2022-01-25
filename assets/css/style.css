@@ -910,6 +910,7 @@ header {
 .header-top {
   background: var(--secondary-color);
   font-size: 15px;
+  display: block;
 }
 
 .header-top .social-icon ul li {
@@ -1015,6 +1016,13 @@ header {
   color: var(--primary-color);
 }
 
+.open-nav-menu {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
 /* Dropdown Menu */
 .main-menu ul li .submenu {
   position: absolute;
@@ -1059,48 +1067,77 @@ header {
 }
 
 /* Mobile Menu */
-.slick-nav-menu {
-  position: fixed;
-  width: 100%;
-  z-index: 9999999;
-  opacity: 0;
-  visibility: hidden;
+.open-nav-menu .slicknav_btn {
+  background: none;
+  border-radius: 0;
+  padding: 20px;
+  margin: 0;
 }
 
-.slick-nav-menu .slicknav_menu {
-  background: var(--secondary-color);
-}
-
-.slick-nav-menu .slicknav_brand {
-  height: auto;
-  width: 140px;
-  padding: 2px;
-}
-
-.slick-nav-menu .slicknav_brand img {
-  width: 100%;
-}
-
-.slick-nav-menu .slicknav_btn {
+.open-nav-menu .slicknav_menu {
   background: none;
 }
 
-.slick-nav-menu .slicknav_menu .slicknav_menutxt {
+.open-nav-menu .slicknav_nav {
+  font-size: 1rem;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  right: 0;
+  top: 100%;
+  text-align: left;
+  box-shadow: var(--box-shadow);
+}
+
+.open-nav-menu .slicknav_nav > ul {
+  margin: 0;
+  padding: 20px 40px;
+}
+
+.open-nav-menu .slicknav_menu .slicknav_icon-bar {
+  display: block;
   box-shadow: none;
 }
 
-.slicknav_nav a {
-  background: #ffffff11;
-  text-align: center;
+.slicknav_nav li {
+  border-bottom: 1px solid #ddd;
 }
 
-.slick-nav-menu .slicknav_nav a:hover,
-.slick-nav-menu .slicknav_nav .slicknav_row:hover {
+.slicknav_parent .submenu li {
+  border-top: 1px solid #ddd;
+  border-bottom: none;
+}
+
+.open-nav-menu .slicknav_nav a {
+  color: var(--secondary-color);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-nav-menu .theme-btn {
+  background: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+.open-nav-menu .slicknav_nav a:hover,
+.open-nav-menu .slicknav_nav .slicknav_row:hover {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   background: #ffffff22;
-  color: #fff;
+  color: var(--primary-color);
+}
+
+.open-nav-menu .slicknav_nav .slicknav_row,
+.slicknav_nav a {
+  padding: 5px 0px;
+  margin: 2px 0;
+}
+
+.slicknav_nav .slicknav_arrow {
+  font-size: 1rem;
 }
 
 /* ----------------------------------------------- 
