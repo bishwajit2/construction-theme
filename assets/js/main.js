@@ -20,8 +20,8 @@
     $(function () {
       $("#navMenu").slicknav({
         label: "",
-        closedSymbol: "<span>+</span>",
-        openedSymbol: "<span>-</span>",
+        closedSymbol: "<i class='fas fa-plus'></i>",
+        openedSymbol: "<i class='fas fa-minus'></i>",
         prependTo: ".open-nav-menu",
         closeOnClick: true,
       });

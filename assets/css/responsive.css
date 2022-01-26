@@ -57,6 +57,9 @@
 
 /* Tablet & Mobile: 1320 */
 @media only screen and (max-width: 991px) {
+  .single-slider-inner {
+    padding-top: 40px;
+  }
   .header-top {
     height: 0;
     overflow: hidden;

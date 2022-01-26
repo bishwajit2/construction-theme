@@ -989,9 +989,17 @@ header {
   top: 0;
 }
 
+.nav-brand {
+  max-width: 136px;
+}
+
 .nav-brand a {
   display: block;
   padding: 22px 0;
+}
+
+.nav-brand a img {
+  width: 100%;
 }
 
 /* Main menu */
@@ -1010,6 +1018,11 @@ header {
   -webkit-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
+}
+
+.main-menu ul li a i {
+  font-size: 0.75rem;
+  margin-left: 5px;
 }
 
 .main-menu ul li:hover > a {
@@ -1113,6 +1126,7 @@ header {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .open-nav-menu .theme-btn {
@@ -1137,7 +1151,7 @@ header {
 }
 
 .slicknav_nav .slicknav_arrow {
-  font-size: 1rem;
+  font-size: 0.6em;
 }
 
 /* ----------------------------------------------- 
@@ -1164,7 +1178,7 @@ header {
 .single-slider-inner {
   display: table;
   width: 100%;
-  margin-top: 75px;
+  padding-top: 75px;
 }
 
 .single-slider-table-cell {
@@ -1487,8 +1501,6 @@ header {
 
 .single-feature-box.card {
   border: none;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
 }
 
 .feature-content .theme-span-text,
@@ -1842,7 +1854,7 @@ header {
 
 /* FAQ image */
 .faq-left {
-  padding: 50px;
+  padding: 100px;
   background: var(--primary-color);
   color: #fff;
   display: flex;
