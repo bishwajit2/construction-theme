@@ -1,5 +1,7 @@
 /*
-  Project Name: Buildhub 
+  Project Name: --
+  Author: Bishwajit
+  support: --
   Description: Construction HTML Template
   Version: 1.0.0
 */
@@ -834,12 +836,8 @@ button[type="submit"]:focus,
 /* ----------------------------------------------- 
 # Background CSS
 ================================================== */
-.slider-1 {
+.slider-section {
   background-image: url(../images/bg/slider-1.jpg);
-}
-
-.slider-2 {
-  background-image: url(../images/bg/slider-3.jpg);
 }
 
 .single-project-bg-1 {
@@ -893,6 +891,78 @@ button[type="submit"]:focus,
 
 .subscribe-section .subscribe-left {
   background-image: url("../images/bg/my-subscribe.jpg");
+}
+
+/* ----------------------------------------------- 
+# Preloader CSS
+================================================== */
+
+.dark #preloader {
+  background-color: #232323;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f7f7f7;
+  z-index: 9999999;
+}
+
+.preloader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  padding: 0px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+.preloader span {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #ff5e10;
+  -webkit-animation: preloader 1.3s linear infinite;
+  animation: preloader 1.3s linear infinite;
+}
+
+.preloader span:last-child {
+  animation-delay: -0.8s;
+  -webkit-animation-delay: -0.8s;
+}
+
+@keyframes preloader {
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes preloader {
+  0% {
+    -webkit-transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
 }
 
 /* ----------------------------------------------- 
@@ -989,13 +1059,9 @@ header {
   top: 0;
 }
 
-.nav-brand {
-  max-width: 136px;
-}
-
 .nav-brand a {
   display: block;
-  padding: 22px 0;
+  padding: 15px 0;
 }
 
 .nav-brand a img {
@@ -1099,6 +1165,7 @@ header {
   right: 0;
   top: 100%;
   text-align: left;
+  -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
 }
 
@@ -1109,6 +1176,7 @@ header {
 
 .open-nav-menu .slicknav_menu .slicknav_icon-bar {
   display: block;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -1124,8 +1192,14 @@ header {
 .open-nav-menu .slicknav_nav a {
   color: var(--secondary-color);
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1137,8 +1211,6 @@ header {
 
 .open-nav-menu .slicknav_nav a:hover,
 .open-nav-menu .slicknav_nav .slicknav_row:hover {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   background: #ffffff22;
   color: var(--primary-color);
@@ -1160,6 +1232,8 @@ header {
 .slider-section {
   position: relative;
   height: 764px;
+  background-size: cover;
+  background-position: top center;
 }
 
 .slider-section div {
@@ -1213,7 +1287,7 @@ header {
   z-index: 998;
   height: 70px;
   border: none;
-  background: #fff;
+  background: #f9f9f9;
   color: var(--secondary-color);
 }
 
@@ -1728,7 +1802,11 @@ header {
 }
 
 .testimonial-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 30px 0 0 0;
   padding: 1rem;
@@ -1752,6 +1830,8 @@ header {
 }
 
 .testimonial-slider .slick-dots li.slick-active button {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -1857,9 +1937,16 @@ header {
   padding: 100px;
   background: var(--primary-color);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 

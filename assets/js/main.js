@@ -1,7 +1,19 @@
 (function ($) {
-  "use strict";
+  ("use strict");
+
+  /*------------------------------------
+		Preloader
+	--------------------------------------*/
+  $(window).on("load", function () {
+    $("#preloader").delay(350).fadeOut("slow");
+    $("body").delay(350).css({ overflow: "visible" });
+  });
+
+  
   $(document).ready(function () {
-    // Sticky menu
+    /*------------------------------------
+		/Sticky Menu
+	  --------------------------------------*/
     function sticky() {
       let headerTop = $(".header-top");
       let headerBottom = $(".header-bottom-area");
@@ -16,7 +28,9 @@
     }
     sticky();
 
-    // Slicknav Activation
+    /*------------------------------------
+		Slicknav Activation
+	  --------------------------------------*/
     $(function () {
       $("#navMenu").slicknav({
         label: "",
@@ -27,7 +41,9 @@
       });
     });
 
-    // Hero slider activation
+    /*------------------------------------
+		Hero Slider Activation
+	  --------------------------------------*/
     function heroSlider() {
       var BasicSlider = $(".slider-active");
       BasicSlider.on("init", function (e, slick) {
@@ -80,7 +96,9 @@
     }
     heroSlider();
 
-    // Project sliding activation
+    /*------------------------------------
+		Project Sliding activation
+	  --------------------------------------*/
     $(".project-slides").slick({
       autoplay: false,
       autoplaySpeed: 3000,
@@ -121,7 +139,9 @@
         '<button type="button" class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></button>',
     });
 
-    // Testimonial sliding activation
+    /*------------------------------------
+		Testimonial Sliding activation
+	  --------------------------------------*/
     $(".testimonial-slider").slick({
       autoplay: false,
       autoplaySpeed: 3000,
@@ -141,7 +161,9 @@
       ],
     });
 
-    // Logo sliding activation
+    /*------------------------------------
+		Logo Sliding activation
+	  --------------------------------------*/
     $(".logo-slider").slick({
       autoplay: true,
       autoplaySpeed: 3000,
@@ -189,7 +211,9 @@
       slidesToScroll: 1,
     });
 
-    // ScrollUp activation
+    /*------------------------------------
+		ScrollUp activation
+	  --------------------------------------*/
     $.scrollUp({
       scrollName: "scrollUp", // Element ID
       topDistance: "1000", // Distance from top before showing element (px)
@@ -201,14 +225,18 @@
       activeOverlay: true, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
     });
 
-    // counter section activation
+    /*------------------------------------
+		Counter Section activation
+	  --------------------------------------*/
     $(".single-counter .counter").counterUp({
       delay: 10,
       time: 2000,
       offset: 95,
     });
 
-    // 2nd Circle progress bar
+    /*------------------------------------
+		2nd Circle progressBar
+	  --------------------------------------*/
     function animateElements() {
       $(".progressbar").each(function () {
         let elementPos = $(this).offset().top;
@@ -247,11 +275,15 @@
       });
     }
 
-    // Show animated elements
+    /*------------------------------------
+		Show animated elements
+	  --------------------------------------*/
     animateElements();
     $(window).scroll(animateElements);
 
-    // Magnific popup youtube video
+    /*------------------------------------
+		Magnifiq Popup YouTube Video
+	  --------------------------------------*/
     $(
       ".about-link .video-play-btn, .video-section .video-play-btn"
     ).magnificPopup({
@@ -287,7 +319,9 @@
       },
     });
 
-    // AOS init
+    /*------------------------------------
+		AOS init
+	  --------------------------------------*/
     AOS.init({
       once: true,
       animatedClassName: "animated",
