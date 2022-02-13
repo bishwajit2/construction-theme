@@ -2078,6 +2078,15 @@ header {
   margin-bottom: 15px;
 }
 
+.footer-logo a {
+  width: 250px;
+  display: block;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
 .footer-area a,
 .footer-area h4,
 .footer-about-us p,
