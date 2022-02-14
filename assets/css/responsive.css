@@ -82,9 +82,9 @@
 
 /* Mobile layout: 320px */
 @media only screen and (max-width: 767px) {
-  /* --------------------------------
-  Theme Default CSS 
-  ===================================*/
+  /* -----------------------------
+  Default CSS 
+  --------------------------------*/
   .section-padding {
     padding: 70px 0;
   }
@@ -101,7 +101,9 @@
     font-size: 1.25rem;
   }
 
-  /* Slider Area CSS */
+  /* -----------------------------
+  Slider Area 
+  --------------------------------*/
   .slider-section {
     height: 600px;
   }
@@ -138,7 +140,9 @@
     color: #fff;
   }
 
-  /* Section Title CSS */
+  /* -----------------------------
+  Section title
+  --------------------------------*/
   .section-title .section-heading {
     padding-top: 0;
   }
@@ -147,7 +151,9 @@
     padding: 20px;
   }
 
-  /* Blog section */
+  /* -----------------------------
+  Blog Section 
+  --------------------------------*/
   .blog-page-link {
     margin-bottom: 40px;
   }
@@ -164,7 +170,9 @@
     line-height: 35px;
   }
 
-  /* FAQ section CSS */
+  /* -----------------------------
+  FAQ Section 
+  --------------------------------*/
   .faq-left {
     padding: 30px;
   }
@@ -181,7 +189,9 @@
     width: 90%;
   }
 
-  /* copyright Section CSS */
+  /* -----------------------------
+  Copyright Section
+  --------------------------------*/
   .copyright-section p,
   .copyright-section a {
     text-align: center;
@@ -190,9 +200,9 @@
     text-align: center;
   }
 
-  /* --------------------------------
-  About page CSS 
-  ===================================*/
+  /* -----------------------------
+  About Page
+  --------------------------------*/
   .page-title-area {
     padding: 150px 0 80px 0;
   }
@@ -205,10 +215,9 @@
     padding-top: 60px;
   }
 
-  /* --------------------------------
-  Blog details CSS 
-  ===================================*/
-
+  /* -----------------------------
+  Blog Details
+  --------------------------------*/
   .post-wrapper {
     padding: 20px;
   }
@@ -233,12 +242,16 @@
     margin-top: 15px;
   }
 
-  /* Contact page */
+  /* -----------------------------
+  Contact Page
+  --------------------------------*/
   .contact-page-form {
     padding: 30px;
   }
 
-  /* Sidebar */
+  /* -----------------------------
+  Sidebar
+  --------------------------------*/
   .widget {
     padding: 20px;
   }
