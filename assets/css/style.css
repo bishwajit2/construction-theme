@@ -2415,6 +2415,10 @@ header {
   background: #fff;
 }
 
+.service-thumb img {
+  width: 100%;
+}
+
 .service-details-text-content h2,
 .service-details-text-content h3 {
   text-transform: uppercase;
