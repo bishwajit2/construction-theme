@@ -1017,7 +1017,7 @@ header {
 .header-top-info ul li {
   font-family: "Rajdhani", sans-serif;
   display: inline-block;
-  padding: 11px 15px;
+  padding: 11px 0 11px 15px;
   -webkit-transition: color 0.15s ease;
   -o-transition: color 0.15s ease;
   transition: color 0.15s ease;
@@ -1180,7 +1180,7 @@ header {
   box-shadow: none;
 }
 
-.slicknav_nav li {
+.slicknav_nav li:not(:last-child) {
   border-bottom: 1px solid #ddd;
 }
 

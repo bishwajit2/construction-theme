@@ -18,6 +18,7 @@
 
   .header-top-info ul li {
     font-size: 0.9rem;
+    padding: 11px 0 11px 13px;
   }
 
   .main-menu ul li a {
@@ -61,12 +62,13 @@
   .single-slider-inner {
     padding-top: 40px;
   }
+
   .header-top {
     height: 0;
     overflow: hidden;
   }
 
-  .main-menu nav {
+  .main-menu #navMenu {
     display: none;
   }
 
