@@ -1606,8 +1606,8 @@ header {
 }
 
 .single-logo .partner-logo {
-  width: 100%;
-  height: 300px;
+  width: 80%;
+  height: 200px;
   display: block;
   position: relative;
 }
