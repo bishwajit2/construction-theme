@@ -53,18 +53,18 @@
 # Default CSS
 ======================= */
 :root {
-  --primary-color: rgb(255, 94, 21);
-  --secondary-color: rgb(8, 39, 85);
+  --primary-color: #FF5E15;
+  --secondary-color: #082755;
   --font-color: #565969;
-  --box-shadow: 0 1px 21px 2px #7682b711;
   --gray-bg-color: #f5faff;
+  --gray-color: #f0f2f5;
+  --box-shadow: 0 1px 21px 2px #7682b711;
   --bg-primary-pattern: url(../images/pattern.png),
     linear-gradient(90deg, var(--primary-color), var(--primary-color));
   --bg-secondary-pattern: url(../images/pattern.png),
     linear-gradient(90deg, var(--secondary-color), var(--secondary-color));
   --bg-white-pattern: url(../images/pattern.png),
     linear-gradient(90deg, #fff, #fff);
-  --gray-color: #f0f2f5;
 }
 
 body {
